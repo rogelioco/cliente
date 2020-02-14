@@ -13,6 +13,9 @@ from rest_framework import generics
 from Login.models import Example2
 from Login.serializer import Example2Serializers
 
+
+
+
 class CustonAuthToken(ObtainAuthToken):
 
 
@@ -49,3 +52,4 @@ class ExampleList2(APIView):
             datas = serializer.data
             return Response(datas)
         return Response(serializer.errors, status = status.HTTP_400_BAD_REQUEST)
+
