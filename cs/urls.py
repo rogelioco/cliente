@@ -35,7 +35,7 @@ class UserViewSet(viewsets.ModelViewSet):
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 
-schema_view = get_swagger_view(title='EMS API Documentation')
+schema_view = get_swagger_view(title='Rogelio')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
